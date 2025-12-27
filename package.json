@@ -2,6 +2,7 @@
   "name": "abap-redis",
   "version": "1.0.0",
   "description": "ABAP Redis Client",
+  "private": true,
   "keywords": [
     "abap",
     "redis",
@@ -17,8 +18,6 @@
   },
   "license": "MIT",
   "author": "Furkan COSGUN",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "lint": "abaplint",
     "unit": "rm -rf output && abap_transpile && echo RUNNING && node --expose-gc output/index.mjs && echo OK",
