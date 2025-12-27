@@ -1,0 +1,31 @@
+{
+  "name": "abap-redis",
+  "version": "1.0.0",
+  "description": "ABAP Redis Client",
+  "keywords": [
+    "abap",
+    "redis",
+    "abapgit"
+  ],
+  "homepage": "https://github.com/furkancosgun/abap-redis#readme",
+  "bugs": {
+    "url": "https://github.com/furkancosgun/abap-redis/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkancosgun/abap-redis.git"
+  },
+  "license": "MIT",
+  "author": "Furkan COSGUN",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "abaplint",
+    "unit": "rm -rf output && abap_transpile && echo RUNNING && node --expose-gc output/index.mjs && echo OK",
+    "test": "npm run lint && npm run unit"
+  },
+  "dependencies": {
+    "@abaplint/cli": "^2.115.5",
+    "@abaplint/transpiler-cli": "^2.12.22"
+  }
+}
