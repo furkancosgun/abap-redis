@@ -110,7 +110,7 @@ CLASS zcx_redis_error IMPLEMENTATION.
       IMPORTING callstack = mt_stack.
 
     LOOP AT mt_stack ASSIGNING <fs_stack>.
-      IF <fs_stack>-mainprogram CP |ZCX_ABAPGIT_EXCEPTION*|.
+      IF <fs_stack>-mainprogram CP |ZCX_REDIS_ERROR*|.
         DELETE TABLE mt_stack FROM <fs_stack>.
       ELSE.
         EXIT.
